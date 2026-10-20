@@ -5,22 +5,22 @@
 **NIM:** 240511056  
 **Kelas:** TI24A
 
-## Perbandingan platform
+## Perbandingan Platform
 
 | Aspek | Web | Desktop | Mobile |
 |---|---|---|---|
-| Bahasa utama | HTML, CSS, dan JavaScript/TypeScript untuk antarmuka; backend dapat memakai bahasa lain sesuai kebutuhan. | Bergantung pada teknologi yang dipilih, misalnya C# untuk .NET, Java/Kotlin, Swift, atau JavaScript/TypeScript melalui framework desktop. | Kotlin atau Java untuk Android dan Swift untuk iOS; pengembangan lintas platform juga dapat memakai Dart (Flutter) atau JavaScript/TypeScript (React Native). |
-| Arsitektur | Umumnya memakai model client-server. Browser menampilkan antarmuka dan berkomunikasi dengan server melalui HTTP/HTTPS atau API. | Aplikasi berjalan sebagai program yang dipasang pada sistem operasi. Aplikasi dapat memproses data secara lokal, memakai layanan jaringan, atau menggabungkan keduanya. | Aplikasi berjalan pada perangkat dengan sistem operasi mobile dan dapat mengakses kemampuan perangkat melalui API yang diizinkan, misalnya kamera, lokasi, dan notifikasi. |
-| Cara distribusi | Diterbitkan pada server atau layanan hosting lalu diakses melalui URL menggunakan browser. | Umumnya didistribusikan melalui installer, paket aplikasi, toko aplikasi, atau sistem distribusi internal. | Umumnya melalui toko aplikasi seperti Google Play atau Apple App Store, atau melalui mekanisme distribusi lain yang didukung platform. |
-| Keunggulan | Mudah diakses dari berbagai perangkat yang memiliki browser; pembaruan di server dapat langsung tersedia tanpa pengguna memasang ulang aplikasi. | Dapat terintegrasi lebih dekat dengan sistem operasi dan sesuai untuk kebutuhan kerja yang memerlukan kemampuan lokal atau penggunaan perangkat tertentu. | Praktis untuk penggunaan saat bepergian dan dapat memanfaatkan fitur perangkat mobile sesuai izin pengguna. |
-| Keterbatasan | Kemampuan dan pengalaman pengguna dapat dipengaruhi browser, koneksi internet, serta batasan akses terhadap fitur perangkat. | Perlu mempertimbangkan kompatibilitas sistem operasi, proses instalasi, dan distribusi pembaruan. | Perlu memperhatikan perbedaan versi sistem operasi, ukuran layar, konsumsi baterai, izin aplikasi, dan proses distribusi. |
+| Bahasa utama | HTML, CSS, dan JavaScript/TypeScript untuk antarmuka. Bagian server dapat menggunakan bahasa lain sesuai kebutuhan. | Bergantung pada teknologi yang digunakan, misalnya C# pada .NET, Java/Kotlin, Swift, atau JavaScript/TypeScript melalui framework desktop. | Kotlin atau Java untuk Android dan Swift untuk iOS. Pengembangan lintas platform juga dapat menggunakan Dart melalui Flutter atau JavaScript/TypeScript melalui React Native. |
+| Arsitektur | Umumnya menggunakan model client-server. Browser menampilkan antarmuka dan berkomunikasi dengan server melalui HTTP/HTTPS atau API. | Dipasang dan dijalankan pada sistem operasi komputer. Pemrosesan dapat dilakukan secara lokal, melalui layanan jaringan, atau dengan kombinasi keduanya. | Berjalan pada sistem operasi perangkat mobile dan dapat menggunakan API perangkat, seperti kamera, lokasi, dan notifikasi, sesuai dukungan platform serta izin pengguna. |
+| Cara distribusi | Diterbitkan pada server atau layanan hosting, kemudian diakses melalui URL menggunakan browser. | Umumnya didistribusikan melalui installer, paket aplikasi, toko aplikasi, atau sistem distribusi internal. | Umumnya didistribusikan melalui toko aplikasi seperti Google Play dan Apple App Store, atau melalui mekanisme lain yang didukung platform. |
+| Keunggulan | Dapat diakses dari berbagai perangkat yang memiliki browser. Pembaruan pada server biasanya langsung tersedia bagi pengguna. | Dapat terintegrasi dengan sistem operasi dan sesuai untuk kebutuhan yang memerlukan kemampuan lokal atau akses ke perangkat tertentu. | Praktis digunakan saat bepergian dan dapat memanfaatkan fitur perangkat mobile sesuai izin yang diberikan. |
+| Keterbatasan | Pengalaman pengguna dapat dipengaruhi browser, kualitas koneksi, dan batasan akses terhadap fitur perangkat. | Perlu mempertimbangkan kompatibilitas sistem operasi, proses instalasi, serta distribusi pembaruan. | Perlu memperhatikan versi sistem operasi, ukuran layar, konsumsi baterai, izin aplikasi, dan proses distribusi. |
 | Contoh aplikasi | Google Docs versi web, Gmail versi web, dan aplikasi web kampus. | Visual Studio Code, Microsoft Word versi desktop, dan aplikasi kasir desktop. | WhatsApp untuk Android/iOS, Google Maps, dan aplikasi mobile perbankan. |
 
 ## Pembahasan
 
-Ketiga platform memiliki tujuan penggunaan dan pertimbangan teknis yang berbeda. Web cocok ketika akses melalui browser dan penyebaran pembaruan yang terpusat menjadi prioritas. Desktop relevan untuk aplikasi yang perlu dipasang dan dijalankan pada sistem operasi komputer, termasuk kebutuhan integrasi lokal. Mobile dirancang untuk penggunaan pada perangkat genggam dan dapat memanfaatkan fitur perangkat sesuai izin yang tersedia.
+Ketiga platform memiliki karakteristik dan pertimbangan teknis yang berbeda. Web sesuai ketika akses melalui browser dan pembaruan terpusat menjadi prioritas. Desktop relevan untuk aplikasi yang dipasang pada komputer dan membutuhkan integrasi dengan sistem operasi atau pemrosesan lokal. Mobile dirancang untuk perangkat genggam serta dapat memanfaatkan fitur perangkat sesuai izin yang tersedia.
 
-Pemilihan platform sebaiknya didasarkan pada kebutuhan pengguna, lingkungan perangkat, kebutuhan akses, kemampuan teknis yang diperlukan, dan cara aplikasi akan dipelihara. Tidak ada satu platform yang selalu paling baik untuk semua jenis aplikasi.
+Pemilihan platform perlu mempertimbangkan kebutuhan pengguna, perangkat yang tersedia, kemampuan teknis yang diperlukan, pola akses, dan cara aplikasi dipelihara. Tidak ada satu platform yang selalu paling tepat untuk semua kebutuhan; keputusan sebaiknya mengikuti tujuan dan kondisi penggunaan aplikasi.
 
 ## Referensi
 
@@ -29,7 +29,3 @@ Pemilihan platform sebaiknya didasarkan pada kebutuhan pengguna, lingkungan pera
 3. Android Developers, “Build your first app.” https://developer.android.com/get-started
 4. Apple Developer, “Develop apps for Apple platforms.” https://developer.apple.com/develop/
 5. Electron, “Introduction.” https://www.electronjs.org/docs/latest/
-
----
-
-*Catatan pengerjaan: isi tabel ini merupakan perbandingan umum. Contoh teknologi dan arsitektur dapat berbeda sesuai rancangan aplikasi. Lengkapi refleksi pribadi serta bukti setup environment secara terpisah sebelum pengumpulan.*
