@@ -12,7 +12,7 @@ if (Test-Path $screenshotPath) {
     $screenshotHtml = @"
 <div class="screenshot-container">
   <img src="$screenshotUri" class="screenshot-img" alt="Screenshot Terminal Asli">
-  <div class="screenshot-caption">Gambar 1: Bukti tangkapan layar terminal asli eksekusi verifikasi versi kakas (Git, Node.js, NPM, Java JDK).</div>
+  <div class="screenshot-caption">Gambar 1: Bukti tangkapan layar terminal asli eksekusi verifikasi versi kakas (Git, Node.js, NPM, Java JDK, VS Code, dan Android Studio).</div>
 </div>
 "@
 } else {

@@ -41,7 +41,7 @@ Pemeriksaan aktual terhadap environment pengembangan pada komputer menghasilkan 
 | `npm --version` | **Terpasang** | `10.8.2` (`C:\Program Files\nodejs\npm.cmd`) |
 | `java -version` | **Terpasang** | `openjdk version "17.0.20.1" 2026-08-18` (Temurin-17.0.20.1+1, `javac 17.0.20.1` di `C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin`) |
 | **VS Code** | **Terpasang** | Versi 1.142.0 (`C:\Users\rayha\AppData\Local\Programs\Microsoft VS Code`) |
-| **Android Studio** | **Terpasang** | Versi `2026.2` (Executable: `studio64.exe` di `C:\Program Files\Android\Android Studio\bin`) |
+| **Android Studio** | **Terpasang** | Versi `2026.2` (Build: `AI-262.9437.185.2621.16467767`, Executable: `studio64.exe` di `C:\Program Files\Android\Android Studio\bin`) |
 | **Android SDK** | **Terpasang** | Terkonfigurasi di `C:\Users\rayha\AppData\Local\Android\Sdk` (build-tools, platforms, platform-tools, emulator) |
 
 ---

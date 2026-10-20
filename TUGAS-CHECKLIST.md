@@ -18,8 +18,8 @@
 | **Verifikasi NPM** | `PASS` | `npm --version` menghasilkan `10.8.2`. |
 | **Verifikasi Java JDK** | `PASS` | `openjdk version "17.0.20.1" 2026-08-18` (Temurin-17.0.20.1+1, `javac 17.0.20.1` di `C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin`). |
 | **Status Visual Studio Code** | `PASS` | Terpasang versi 1.142.0 pada direktori `C:\Users\rayha\AppData\Local\Programs\Microsoft VS Code`. |
-| **Status Android Studio & SDK** | `PASS` | Android Studio 2026.2 terpasang (`studio64.exe` di `C:\Program Files\Android\Android Studio\bin`) & Android SDK lengkap di `C:\Users\rayha\AppData\Local\Android\Sdk`. |
-| **Screenshot Terminal Asli** | `PASS` | Bukti tangkapan layar terminal asli (Git Bash / MINGW64) telah disematkan pada `screenshots/terminal-setup.png` dan tertanam dalam laporan PDF. |
+| **Status Android Studio & SDK** | `PASS` | Android Studio 2026.2 (Build: `AI-262.9437.185.2621.16467767`, `studio64.exe` di `C:\Program Files\Android\Android Studio\bin`) & Android SDK lengkap di `C:\Users\rayha\AppData\Local\Android\Sdk`. |
+| **Screenshot Terminal Asli** | `PASS` | Bukti tangkapan layar terminal asli (Windows PowerShell) telah disematkan pada `screenshots/terminal-setup.png` dan tertanam dalam laporan PDF, memuat hasil verifikasi lengkap Git, Node, NPM, Java JDK, VS Code, dan Android Studio (Build Number & SDK). |
 | **Analisis 6 Aspek Platform (Web, Desktop, Mobile)** | `PASS` | Lengkap di `analisis-platform.md` meliputi Bahasa Utama, Arsitektur, Cara Distribusi, Keunggulan, Keterbatasan, Contoh Aplikasi, dan Kesimpulan. |
 | **Sumber Referensi Kredibel (Min. 3)** | `PASS` | Memuat 7 referensi resmi: MDN Web Docs (2), Microsoft Learn, Electron, Android Developers (2), dan Apple Developer. |
 | **Refleksi Pembelajaran (150–250 kata)** | `PASS` | Teks refleksi memuat 214 kata, sudut pandang orang pertama, membahas minat Web, tantangan setup environment, dan rencana peningkatan. |
