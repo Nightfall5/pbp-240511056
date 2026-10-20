@@ -25,7 +25,7 @@ if (Test-Path $screenshotPath) {
   <div class="cmd">PS D:\Project_Kuliah\MK_PBP_PAK_SUGIYANTO&gt; npm --version</div>
   <div class="cmd-out">10.8.2</div>
   <div class="cmd">PS D:\Project_Kuliah\MK_PBP_PAK_SUGIYANTO&gt; java -version</div>
-  <div class="cmd-err">java : The term 'java' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.</div>
+  <div class="cmd-out">openjdk version "17.0.20.1" 2026-08-18<br>OpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)<br>OpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)</div>
 </div>
 <div style="font-size: 8.5pt; color: #64748b; font-style: italic; text-align: center;">
   Catatan: Tangkapan layar terminal asli dapat disematkan di folder <code>screenshots/terminal-setup.png</code>.

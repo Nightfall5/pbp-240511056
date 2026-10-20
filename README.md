@@ -39,9 +39,10 @@ Pemeriksaan aktual terhadap environment pengembangan pada komputer menghasilkan 
 | `git --version` | **Terpasang** | `git version 2.55.0.windows.3` (`C:\Program Files\Git\cmd\git.exe`) |
 | `node --version` | **Terpasang** | `v20.18.0` (`C:\Program Files\nodejs\node.exe`) |
 | `npm --version` | **Terpasang** | `10.8.2` (`C:\Program Files\nodejs\npm.cmd`) |
-| `java -version` | **Belum Terpasang** | Perintah tidak dikenali (`CommandNotFoundException`). JDK belum terpasang di sistem / PATH. |
+| `java -version` | **Terpasang** | `openjdk version "17.0.20.1" 2026-08-18` (Temurin-17.0.20.1+1, `javac 17.0.20.1` di `C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin`) |
 | **VS Code** | **Terpasang** | Versi 1.142.0 (`C:\Users\rayha\AppData\Local\Programs\Microsoft VS Code`) |
-| **Android Studio** | **Belum Terpasang** | Belum diinstal; dilaporkan menyusul sesuai ketentuan dosen terkait ukuran file / resource. |
+| **Android Studio** | **Terpasang** | Versi `2026.2` (Executable: `studio64.exe` di `C:\Program Files\Android\Android Studio\bin`) |
+| **Android SDK** | **Terpasang** | Terkonfigurasi di `C:\Users\rayha\AppData\Local\Android\Sdk` (build-tools, platforms, platform-tools, emulator) |
 
 ---
 
