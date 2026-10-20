@@ -20,6 +20,16 @@
 
 Web, desktop, dan mobile memiliki karakteristik yang berbeda. Web mengutamakan akses melalui browser dan pembaruan terpusat. Desktop cocok ketika integrasi dengan sistem operasi komputer atau pemrosesan lokal menjadi kebutuhan penting. Mobile memudahkan penggunaan saat berpindah tempat dan menyediakan akses ke fitur perangkat genggam. Pemilihan platform sebaiknya mengikuti kebutuhan pengguna, lingkungan perangkat, fitur yang diperlukan, dan cara aplikasi akan dipelihara.
 
+## Refleksi Pembelajaran dan Setup Environment
+
+Bagi saya, platform Web merupakan platform yang paling menarik untuk dipelajari karena saya ingin memahami proses pengembangan aplikasi secara menyeluruh, mulai dari merancang tampilan, menghubungkan frontend dengan backend, mengelola data, sampai melakukan deployment agar aplikasi dapat digunakan melalui browser. Saya tertarik bukan hanya membuat aplikasi terlihat bagus, tetapi juga memahami bagaimana aplikasi bekerja dan menyelesaikan kebutuhan penggunanya.
+
+Menurut saya, salah satu hal penting dalam mempelajari Pemrograman Berbasis Platform adalah memahami bahwa setiap platform mempunyai karakteristik, keunggulan, dan keterbatasan yang berbeda. Web menawarkan kemudahan akses dan pembaruan terpusat, sedangkan Desktop dan Mobile mempunyai kelebihan tersendiri sesuai kebutuhan pengguna dan kemampuan perangkatnya.
+
+Tantangan dalam menyiapkan environment pengembangan adalah memastikan setiap tools yang diperlukan tersedia, dapat dikenali oleh terminal, dan mempunyai versi yang sesuai. Saya perlu memverifikasi kondisi sebenarnya melalui perintah terminal, membaca pesan kesalahan dengan teliti, serta memeriksa dokumentasi resmi apabila muncul masalah. Saya tidak ingin hanya mengikuti langkah instalasi tanpa memahami hasilnya.
+
+Ke depannya, saya akan membiasakan diri mengerjakan proyek secara bertahap, menguji setiap perubahan, mencatat masalah dan solusinya, serta menggunakan Git dan GitHub untuk mengelola versi kode. Saya juga ingin meningkatkan kemampuan membangun aplikasi dari tahap perencanaan hingga deployment. Dengan cara tersebut, saya berharap dapat menjadi pengembang yang tidak hanya mampu menulis kode, tetapi juga memahami proses pengembangan dan pemeliharaan aplikasi secara bertanggung jawab.
+
 ## Referensi
 
 1. MDN Web Docs. *Your first website*. https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website
