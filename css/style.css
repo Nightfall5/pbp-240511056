@@ -1,0 +1,162 @@
+/* ==========================================================================
+   NEO-BRUTALIST WEB ARCHETYPE — STYLESHEET
+   Design System: Neo-Brutalist Login Page (Google Stitch Reference)
+   Context: Praktikum Pemrograman Berbasis Platform (PBP)
+   ========================================================================== */
+
+/* --- Custom Variables matching Design System --- */
+:root {
+  --color-surface: #fcfaed;
+  --color-surface-container: #f0eee1;
+  --color-surface-lowest: #ffffff;
+  --color-surface-variant: #e4e3d6;
+  --color-ink: #1b1c15;
+  --color-primary-container: #ffff00;
+  --color-secondary-container: #00e3fd;
+  --color-secondary-fixed: #9cf0ff;
+  --color-tertiary-fixed: #6bff83;
+  --color-tertiary-container: #e1ffdd;
+  --color-tertiary: #006e27;
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --border-width-standard: 3px;
+  --border-width-heavy: 4px;
+  --border-width-card: 5px;
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 600, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+/* Neo-Brutalist Grid Background */
+.brutal-grid-bg {
+  background-color: var(--color-surface);
+  background-image: 
+    linear-gradient(to right, rgba(27, 28, 21, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(27, 28, 21, 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Continuous Marquee Ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  display: flex;
+  width: 200%;
+  animation: marquee 22s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Neo-Brutalist Card Shadow & Hover States */
+.brutal-card-shadow {
+  box-shadow: 8px 8px 0px var(--color-ink);
+  transition: transform 0.15s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.15s cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (min-width: 640px) {
+  .brutal-card-shadow {
+    box-shadow: 10px 10px 0px var(--color-ink);
+  }
+}
+
+.brutal-card-shadow:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+
+/* Primary CTA Button (Mechanical Switch Physics) */
+.brutal-btn-cta {
+  box-shadow: 6px 6px 0px var(--color-ink);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+}
+
+.brutal-btn-cta:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 3px 3px 0px var(--color-ink);
+  background-color: #a01515;
+}
+
+.brutal-btn-cta:active {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px var(--color-ink);
+}
+
+/* SSO / Secondary Buttons */
+.brutal-btn-sso {
+  box-shadow: 4px 4px 0px var(--color-ink);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.15s ease;
+}
+
+.brutal-btn-sso:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px var(--color-ink);
+  filter: brightness(0.97);
+}
+
+.brutal-btn-sso:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px var(--color-ink);
+}
+
+/* Password Toggle Button */
+.password-toggle-btn {
+  box-shadow: 2px 2px 0px var(--color-ink);
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background-color 0.15s ease;
+}
+
+.password-toggle-btn:hover {
+  background-color: var(--color-secondary-container);
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--color-ink);
+}
+
+.password-toggle-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px var(--color-ink);
+}
+
+/* Form Input Focus and Error States */
+.brutal-input {
+  transition: box-shadow 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.brutal-input:focus {
+  outline: none;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 0px #006875;
+}
+
+.brutal-input.has-error {
+  border-color: var(--color-error) !important;
+  box-shadow: 4px 4px 0px var(--color-error) !important;
+  background-color: #fff8f8;
+}
+
+/* Focus visible styling for accessibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--color-ink) !important;
+  outline-offset: 2px !important;
+}
+
+/* Sub-card Hazard Pattern */
+.hazard-stripe {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #1b1c15,
+    #1b1c15 10px,
+    #ffff00 10px,
+    #ffff00 20px
+  );
+}

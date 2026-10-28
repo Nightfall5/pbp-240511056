@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>PBP//PORTAL — LOGIN MAHASISWA</title>
+
+  <!-- Google Fonts: Space Grotesk & Space Mono -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&amp;family=Space+Mono:ital,wght@0,400;0,700;1,700&amp;display=swap" rel="stylesheet">
+
+  <!-- Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS v3 with Plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed-dim": "#cdcd00",
+            "on-secondary-fixed-variant": "#004f58",
+            "secondary": "#006875",
+            "surface-tint": "#626200",
+            "surface-container": "#f0eee1",
+            "inverse-surface": "#303129",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-container": "#757500",
+            "on-error-container": "#93000a",
+            "background": "#fcfaed",
+            "surface-variant": "#e4e3d6",
+            "primary-fixed": "#eaea00",
+            "on-secondary-container": "#00616d",
+            "on-primary-fixed-variant": "#494900",
+            "on-tertiary-container": "#008330",
+            "secondary-fixed": "#9cf0ff",
+            "inverse-primary": "#cdcd00",
+            "on-tertiary-fixed-variant": "#00531b",
+            "on-primary-fixed": "#1d1d00",
+            "tertiary-fixed-dim": "#00e55b",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed": "#002107",
+            "primary": "#626200",
+            "surface-container-low": "#f6f4e7",
+            "primary-container": "#ffff00",
+            "surface-dim": "#dcdace",
+            "surface-bright": "#fcfaed",
+            "outline-variant": "#cac8aa",
+            "on-background": "#1b1c15",
+            "tertiary-fixed": "#6bff83",
+            "secondary-container": "#00e3fd",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#484831",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#eae9dc",
+            "surface-container-highest": "#e4e3d6",
+            "tertiary": "#006e27",
+            "outline": "#79785f",
+            "on-primary": "#ffffff",
+            "tertiary-container": "#e1ffdd",
+            "secondary-fixed-dim": "#00daf3",
+            "on-error": "#ffffff",
+            "on-surface": "#1b1c15",
+            "inverse-on-surface": "#f3f1e4",
+            "on-secondary-fixed": "#001f24",
+            "error-container": "#ffdad6",
+            "surface": "#fcfaed"
+          },
+          borderRadius: {
+            "DEFAULT": "0px",
+            "none": "0px",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-md": "1.25rem",
+            "space-lg": "2rem",
+            "margin-sm": "1rem",
+            "margin": "2rem",
+            "gutter": "1.5rem",
+            "gutter-sm": "1rem",
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "space-xl": "3.5rem"
+          },
+          fontFamily: {
+            "label-md": ["Space Mono", "monospace"],
+            "label-sm": ["Space Mono", "monospace"],
+            "body-md": ["Space Grotesk", "sans-serif"],
+            "display-hero-mobile": ["Space Grotesk", "sans-serif"],
+            "display-hero": ["Space Grotesk", "sans-serif"],
+            "label-lg": ["Space Mono", "monospace"],
+            "headline-sm": ["Space Grotesk", "sans-serif"],
+            "body-sm": ["Space Grotesk", "sans-serif"],
+            "body-lg": ["Space Grotesk", "sans-serif"],
+            "headline-lg-mobile": ["Space Grotesk", "sans-serif"],
+            "headline-md": ["Space Grotesk", "sans-serif"],
+            "headline-lg": ["Space Grotesk", "sans-serif"]
+          },
+          fontSize: {
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "700" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }],
+            "display-hero-mobile": ["44px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "display-hero": ["72px", { "lineHeight": "76px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+            "label-lg": ["16px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }],
+            "headline-sm": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-md": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- External Neo-Brutalist Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-background text-on-background brutal-grid-bg min-h-screen flex flex-col font-body-md selection:bg-primary-container selection:text-on-background relative overflow-x-hidden">
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="flex justify-between items-center w-full px-4 sm:px-6 py-3.5 sm:py-4 border-b-4 border-on-background bg-background shadow-[0_4px_0_0_#1b1c15] sticky top-0 z-50">
+    <!-- Brand / Logo -->
+    <div class="flex items-center gap-2.5 sm:gap-3">
+      <div class="w-9 h-9 bg-primary-container border-2 border-on-background flex items-center justify-center shadow-[2px_2px_0_0_#1b1c15] flex-shrink-0">
+        <span class="material-symbols-outlined text-on-background text-xl select-none" data-icon="terminal">terminal</span>
+      </div>
+      <a class="font-headline-md text-xl sm:text-headline-md tracking-tight text-on-background uppercase font-bold" href="#">
+        PBP//PORTAL
+      </a>
+    </div>
+
+    <!-- Navigation Links (Desktop) -->
+    <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-background transition-transform hover:translate-x-0.5 hover:translate-y-0.5" href="#beranda">
+        PANDUAN
+      </a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-background transition-transform hover:translate-x-0.5 hover:translate-y-0.5" href="#modul">
+        MODUL
+      </a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-background transition-transform hover:translate-x-0.5 hover:translate-y-0.5" href="#jadwal">
+        JADWAL
+      </a>
+      <a class="font-label-md text-label-md text-on-surface-variant hover:text-on-background transition-transform hover:translate-x-0.5 hover:translate-y-0.5" href="#tentang">
+        TENTANG
+      </a>
+    </nav>
+
+    <!-- Trailing Actions & Status Pill -->
+    <div class="flex items-center gap-2.5 sm:gap-4">
+      <div class="hidden lg:flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1.5 border-2 border-on-background font-label-sm text-label-sm shadow-[2px_2px_0_0_#1b1c15] whitespace-nowrap">
+        <span class="inline-block w-2.5 h-2.5 bg-tertiary border border-on-background animate-pulse"></span>
+        <span>PORTAL: AKTIF</span>
+      </div>
+      <a class="border-b-2 border-on-background text-on-background font-label-md text-xs sm:text-label-md bg-secondary-container px-3 sm:px-4 py-2 border-2 shadow-[3px_3px_0_0_#1b1c15] hover:translate-x-0.5 hover:translate-y-0.5 transition-transform flex items-center gap-1.5 sm:gap-2 whitespace-nowrap" href="#login-card">
+        <span class="material-symbols-outlined text-sm sm:text-base select-none" data-icon="shield">shield</span>
+        <span>LOGIN / MASUK</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- MARQUEE TICKER RIBBON -->
+  <div class="w-full bg-primary-container border-b-4 border-on-background overflow-hidden py-2 select-none relative z-40">
+    <div class="animate-ticker font-label-md text-label-md text-on-background tracking-wider">
+      <div class="flex items-center space-x-6 whitespace-nowrap">
+        <span>/// PEMROGRAMAN BERBASIS PLATFORM /// PRAKTIKUM WEB // KELAS TI24A /// TUGAS PERANCANGAN UI/UX</span>
+        <span class="font-bold">✦</span>
+        <span>UNIVERSITAS KUNINGAN</span>
+        <span class="font-bold">✦</span>
+        <span>STATUS: TAMPILAN LOGIN AKTIF</span>
+        <span class="font-bold">✦</span>
+        <span>MODE: EKSPLORASI PLATFORM WEB</span>
+        <span class="font-bold">✦</span>
+        <span>DESAIN: NEO-BRUTALISM GOOGLE STITCH</span>
+        <span class="font-bold">✦</span>
+      </div>
+      <div class="flex items-center space-x-6 whitespace-nowrap ml-6">
+        <span>/// PEMROGRAMAN BERBASIS PLATFORM /// PRAKTIKUM WEB // KELAS TI24A /// TUGAS PERANCANGAN UI/UX</span>
+        <span class="font-bold">✦</span>
+        <span>UNIVERSITAS KUNINGAN</span>
+        <span class="font-bold">✦</span>
+        <span>STATUS: TAMPILAN LOGIN AKTIF</span>
+        <span class="font-bold">✦</span>
+        <span>MODE: EKSPLORASI PLATFORM WEB</span>
+        <span class="font-bold">✦</span>
+        <span>DESAIN: NEO-BRUTALISM GOOGLE STITCH</span>
+        <span class="font-bold">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CANVAS CONTAINER -->
+  <main class="flex-1 flex flex-col justify-center items-center px-4 py-8 sm:py-12 relative overflow-hidden">
+
+    <!-- FLOATING DECORATIVE BRUTALIST SHAPES & STAMP MARKS (XL SCREEN) -->
+    <div class="absolute top-12 left-10 hidden xl:flex flex-col items-center select-none pointer-events-none opacity-80 rotate-[-8deg]">
+      <div class="bg-secondary-fixed text-on-secondary-fixed border-4 border-on-background p-4 shadow-[6px_6px_0_0_#1b1c15] font-label-lg text-label-lg">
+        [ TUGAS // FRONTEND-LOGIN ]
+      </div>
+      <span class="font-display-hero text-on-background text-7xl font-extrabold leading-none mt-2 select-none">✛</span>
+    </div>
+
+    <div class="absolute bottom-16 right-12 hidden xl:flex flex-col items-end select-none pointer-events-none opacity-85 rotate-[6deg]">
+      <div class="bg-error-container text-on-error-container border-4 border-on-background px-5 py-3 shadow-[6px_6px_0_0_#1b1c15] font-label-md text-label-md">
+        ✦ DESAIN: NEO-BRUTALISM
+      </div>
+      <span class="font-display-hero text-on-background text-8xl font-black leading-none mt-1 select-none">✦</span>
+    </div>
+
+    <div class="absolute top-1/3 right-8 hidden lg:block select-none pointer-events-none text-on-background opacity-20 text-9xl font-black">
+      *
+    </div>
+    <div class="absolute bottom-1/3 left-6 hidden lg:block select-none pointer-events-none text-on-background opacity-20 text-9xl font-black">
+      #
+    </div>
+
+    <!-- HERO & INTERACTIVE GREETING BANNER -->
+    <div class="w-full max-w-xl mb-6 relative z-10 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 box-border">
+      <!-- Welcome Badge -->
+      <div class="flex-1 bg-surface-container-lowest border-4 border-on-background p-3.5 shadow-[5px_5px_0_0_#1b1c15] flex items-center gap-3">
+        <div class="w-12 h-12 bg-primary-container border-2 border-on-background flex-shrink-0 flex items-center justify-center font-display-hero text-headline-sm font-black shadow-[2px_2px_0_0_#1b1c15]">
+          PBP
+        </div>
+        <div class="min-w-0">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="bg-primary-container text-on-background border border-on-background px-1.5 py-0.5 font-label-sm text-label-sm font-bold uppercase">
+              PORTAL AKADEMIK
+            </span>
+            <span class="font-label-sm text-label-sm text-outline font-bold">KELAS: TI24A</span>
+          </div>
+          <p class="font-headline-sm text-lg sm:text-headline-sm leading-tight text-on-background mt-0.5">
+            SELAMAT DATANG DI PORTAL PBP!
+          </p>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Silakan masukkan identitas mahasiswa dan kata sandi Anda.
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Platform Indicator -->
+      <div class="bg-tertiary-fixed text-on-tertiary-fixed border-4 border-on-background px-4 py-3 shadow-[5px_5px_0_0_#1b1c15] flex sm:flex-col justify-between items-center sm:items-start flex-shrink-0">
+        <span class="font-label-sm text-label-sm font-bold">PLATFORM: WEB</span>
+        <div class="flex items-center gap-1.5 mt-0.5 sm:mt-1">
+          <span class="w-2.5 h-2.5 bg-tertiary border border-on-background inline-block"></span>
+          <span class="font-label-sm text-label-sm font-bold">FRONTEND READY</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CENTRAL BRUTALIST LOGIN CARD WRAPPER WITH FLOATING STICKERS -->
+    <div class="w-full max-w-xl relative z-20 box-border" id="login-card">
+
+      <!-- FLOATING STICKER 1: Cyan Sticker (Top Left) -->
+      <div class="absolute -top-6 -left-4 sm:-left-6 z-30 transform -rotate-3 hover:rotate-0 transition-transform duration-200 cursor-default hidden sm:block">
+        <div class="bg-secondary-container text-on-background border-2 border-on-background px-3.5 py-1.5 shadow-[4px_4px_0_0_#1b1c15] font-label-sm text-label-sm font-bold flex items-center gap-1.5">
+          <span>✦</span>
+          <span>100% RAW BRUTALISM</span>
+        </div>
+      </div>
+
+      <!-- FLOATING STICKER 2: Lime Green Sticker (Top Right) -->
+      <div class="absolute -top-7 -right-4 sm:-right-6 z-30 transform rotate-6 hover:rotate-0 transition-transform duration-200 cursor-default hidden sm:block">
+        <div class="bg-tertiary-fixed text-on-tertiary-fixed px-3.5 py-1.5 shadow-[4px_4px_0_0_#1b1c15] font-label-sm text-label-sm font-bold flex items-center gap-1.5 border-2 border-on-background">
+          <span>★</span>
+          <span>PRAKTIKUM PBP 2026</span>
+        </div>
+      </div>
+
+      <!-- FLOATING STICKER 3: Orange Sticker (Bottom Right) -->
+      <div class="absolute -bottom-5 -right-4 sm:-right-6 z-30 transform -rotate-2 hover:rotate-0 transition-transform duration-200 cursor-default hidden sm:block">
+        <div class="bg-primary-fixed text-on-primary-fixed px-3 py-1.5 shadow-[4px_4px_0_0_#1b1c15] font-label-sm text-label-sm font-bold flex items-center gap-1 border-2 border-on-background">
+          <span>⚠</span>
+          <span>TELITI SEBELUM SUBMIT</span>
+        </div>
+      </div>
+
+      <!-- THE CORE LOGIN CARD -->
+      <div class="bg-primary-container border-[4px] sm:border-[5px] border-on-background brutal-card-shadow p-5 sm:p-8 box-border">
+
+        <!-- Card Header Strip -->
+        <div class="border-b-4 border-on-background pb-4 sm:pb-5 mb-5 sm:mb-6 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-3 h-3 bg-error border border-on-background inline-block"></span>
+              <span class="w-3 h-3 bg-secondary-container border border-on-background inline-block"></span>
+              <span class="w-3 h-3 bg-tertiary-fixed border border-on-background inline-block"></span>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-bold ml-1.5">
+                MODUL LOGIN // PRAKTIKUM PBP
+              </span>
+            </div>
+            <h1 class="font-headline-lg text-2xl sm:text-headline-lg tracking-tight text-on-background uppercase font-extrabold leading-none">
+              MASUK AKUN // LOGIN
+            </h1>
+          </div>
+          <span class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 border-2 border-on-background shadow-[2px_2px_0_0_#1b1c15] whitespace-nowrap self-start sm:self-auto font-bold">
+            MODE: FORM AKTIF
+          </span>
+        </div>
+
+        <p class="font-label-md text-label-md text-on-background font-bold mb-5 tracking-wide">
+          INPUT KREDENSIAL MAHASISWA DENGAN TEPAT:
+        </p>
+
+        <!-- Dynamic Feedback Notification Banner (Revealed via JS) -->
+        <div id="form-feedback" class="hidden" role="alert">
+          <div class="flex items-center gap-2 font-label-md text-label-md font-bold mb-1">
+            <span id="feedback-dot" class="w-3 h-3 bg-tertiary border border-on-background inline-block flex-shrink-0"></span>
+            <span id="feedback-title">STATUS NOTIFIKASI</span>
+          </div>
+          <p id="feedback-message" class="font-label-sm text-label-sm leading-relaxed"></p>
+        </div>
+
+        <!-- Login Form -->
+        <form class="space-y-4 sm:space-y-5" id="login-form" novalidate>
+
+          <!-- Field 1: Username / Email / NIM -->
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <label class="block font-label-md text-label-md text-on-background font-bold tracking-wider" for="username">
+                NIM / EMAIL MAHASISWA <span class="text-error">*</span>
+              </label>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-bold">[WAJIB]</span>
+            </div>
+            <div class="relative">
+              <input
+                class="w-full bg-surface-container-lowest text-on-background font-label-md text-label-md px-4 py-3 sm:py-3.5 border-4 border-on-background shadow-[4px_4px_0_0_#1b1c15] brutal-input placeholder:text-outline placeholder:font-normal"
+                id="username"
+                name="username"
+                placeholder="misal: 240511056 atau mahasiswa@kampus.ac.id"
+                required
+                type="text"
+                autocomplete="username"
+                aria-describedby="username-error-text"
+              />
+            </div>
+            <div id="username-error" class="hidden mt-1.5 bg-error-container text-on-error-container border-2 border-on-background px-3 py-1 font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-[2px_2px_0_0_#1b1c15]" role="alert">
+              <span>⚠</span>
+              <span id="username-error-text">NIM atau Email wajib diisi.</span>
+            </div>
+          </div>
+
+          <!-- Field 2: Password with Accessible Toggle Button -->
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <label class="block font-label-md text-label-md text-on-background font-bold tracking-wider" for="password">
+                KATA SANDI <span class="text-error">*</span>
+              </label>
+              <span class="font-label-sm text-label-sm text-on-surface-variant font-bold">[MIN. 8 KARAKTER]</span>
+            </div>
+            <div class="relative flex items-center">
+              <input
+                class="w-full bg-surface-container-lowest text-on-background font-label-md text-label-md px-4 py-3 sm:py-3.5 pr-14 border-4 border-on-background shadow-[4px_4px_0_0_#1b1c15] brutal-input placeholder:text-outline"
+                id="password"
+                name="password"
+                placeholder="••••••••••••"
+                required
+                type="password"
+                autocomplete="current-password"
+                aria-describedby="password-error-text"
+              />
+              <button
+                type="button"
+                id="toggle-password-btn"
+                class="absolute right-2.5 bg-surface-container-low text-on-background border-2 border-on-background p-1.5 password-toggle-btn flex items-center justify-center cursor-pointer select-none"
+                aria-label="Tampilkan kata sandi"
+                title="Tampilkan kata sandi"
+                aria-pressed="false"
+              >
+                <span class="material-symbols-outlined text-xl select-none leading-none" id="toggle-password-icon">visibility</span>
+              </button>
+            </div>
+            <div id="password-error" class="hidden mt-1.5 bg-error-container text-on-error-container border-2 border-on-background px-3 py-1 font-label-sm text-label-sm font-bold flex items-center gap-1.5 shadow-[2px_2px_0_0_#1b1c15]" role="alert">
+              <span>⚠</span>
+              <span id="password-error-text">Kata sandi wajib diisi minimal 8 karakter.</span>
+            </div>
+          </div>
+
+          <!-- Sub-Controls: Remember Me & Forgot Password -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+            <label class="inline-flex items-center gap-2.5 cursor-pointer select-none">
+              <input
+                class="w-5 h-5 bg-surface-container-lowest border-2 border-on-background text-on-background rounded-none shadow-[2px_2px_0_0_#1b1c15] focus:ring-0 cursor-pointer accent-on-background"
+                id="remember"
+                name="remember"
+                type="checkbox"
+              />
+              <span class="font-label-md text-xs sm:text-label-md text-on-background font-bold">
+                INGAT SAYA DI PERANGKAT INI
+              </span>
+            </label>
+            <a class="font-label-sm text-xs sm:text-label-sm text-on-background font-bold underline decoration-2 underline-offset-4 hover:bg-surface-container-lowest px-1 py-0.5 border border-transparent hover:border-on-background transition-all self-start sm:self-auto" href="#lupa-sandi">
+              LUPA KATA SANDI?
+            </a>
+          </div>
+
+          <!-- Primary CTA Button (Brutal Red Heavy Switch) -->
+          <div class="pt-2 sm:pt-3">
+            <button
+              class="w-full bg-error text-on-error font-label-lg text-sm sm:text-label-lg py-3.5 sm:py-4 px-6 border-4 border-on-background brutal-btn-cta font-bold tracking-wider flex items-center justify-center gap-3 select-none cursor-pointer"
+              type="submit"
+              id="btn-submit"
+            >
+              <span>MASUK KE PORTAL</span>
+              <span class="text-xl leading-none">➔</span>
+            </button>
+          </div>
+
+          <!-- Divider -->
+          <div class="relative my-5 sm:my-6 select-none">
+            <div class="absolute inset-0 flex items-center">
+              <div class="w-full border-t-2 border-on-background border-dashed"></div>
+            </div>
+            <div class="relative flex justify-center">
+              <span class="bg-primary-container px-3 font-label-sm text-label-sm font-bold text-on-background border-2 border-on-background shadow-[2px_2px_0_0_#1b1c15]">
+                ATAU PILIH PROTOKOL SSO
+              </span>
+            </div>
+          </div>
+
+          <!-- Alternative SSO Buttons (Mockup Display) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <button
+              class="bg-surface-container-lowest text-on-background font-label-sm text-label-sm py-2.5 sm:py-3 px-4 border-2 border-on-background brutal-btn-sso font-bold flex items-center justify-center gap-2 cursor-pointer"
+              type="button"
+              id="btn-sso-google"
+            >
+              <span class="font-black text-base leading-none">G</span>
+              <span>MASUK VIA GOOGLE</span>
+            </button>
+            <button
+              class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm py-2.5 sm:py-3 px-4 border-2 border-on-background brutal-btn-sso font-bold flex items-center justify-center gap-2 cursor-pointer"
+              type="button"
+              id="btn-sso-github"
+            >
+              <span class="font-black text-base leading-none">❖</span>
+              <span>MASUK VIA GITHUB</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Bottom Card Notice -->
+        <div class="mt-5 sm:mt-6 pt-3.5 sm:pt-4 border-t-2 border-on-background flex flex-col sm:flex-row items-start sm:items-center justify-between text-on-surface-variant font-label-sm text-label-sm gap-1">
+          <span>PLATFORM: WEB FRONTEND</span>
+          <span class="font-bold text-on-background">STATUS: MODE DEMO TUGAS</span>
+        </div>
+      </div>
+
+      <!-- Sub-Card Terminal Output Drawer -->
+      <div class="mt-4 bg-surface-container-lowest border-4 border-on-background shadow-[6px_6px_0_0_#1b1c15] p-3 overflow-hidden select-none flex flex-col gap-2.5">
+        <div class="flex items-center gap-2 border-2 border-on-background p-1.5 bg-surface-variant">
+          <div class="w-3 h-3 bg-error border border-on-background"></div>
+          <div class="w-3 h-3 bg-primary-container border border-on-background"></div>
+          <div class="w-3 h-3 bg-secondary-container border border-on-background"></div>
+          <div class="w-3 h-3 bg-tertiary-fixed border border-on-background"></div>
+          <div class="flex-1 h-3 border-y border-on-background bg-on-background"></div>
+          <div class="w-3 h-3 bg-surface-container-lowest border border-on-background"></div>
+          <div class="w-3 h-3 bg-inverse-surface border border-on-background"></div>
+        </div>
+        <div class="grid grid-cols-12 gap-1.5 h-7 w-full">
+          <div class="bg-error border-2 border-on-background col-span-2"></div>
+          <div class="bg-primary-container border-2 border-on-background col-span-1"></div>
+          <div class="bg-secondary-container border-2 border-on-background col-span-3"></div>
+          <div class="bg-on-background border-2 border-on-background col-span-1"></div>
+          <div class="bg-tertiary-fixed border-2 border-on-background col-span-2"></div>
+          <div class="bg-surface-container-lowest border-2 border-on-background col-span-1"></div>
+          <div class="bg-primary-fixed border-2 border-on-background col-span-2"></div>
+        </div>
+        <div class="h-4 w-full border-2 border-on-background hazard-stripe"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- WEB FOOTER -->
+  <footer class="w-full px-6 sm:px-8 py-6 flex flex-col md:flex-row justify-between items-center border-t-4 border-on-background bg-surface-variant text-center md:text-left gap-4">
+    <!-- Brand / System Copyright -->
+    <div>
+      <div class="font-headline-sm text-lg sm:text-headline-sm uppercase text-on-surface font-extrabold tracking-tight">
+        PBP//PORTAL
+      </div>
+      <p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+        &copy; 2026 Praktikum Pemrograman Berbasis Platform &mdash; Rayhan Adhyfa Firdaus (240511056).
+      </p>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-6">
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-background underline transition-transform active:translate-x-0.5 active:translate-y-0.5" href="./analisis-platform.md">
+        ANALISIS PLATFORM
+      </a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-background underline transition-transform active:translate-x-0.5 active:translate-y-0.5" href="./README.md">
+        DOKUMENTASI TUGAS
+      </a>
+      <a class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-background underline transition-transform active:translate-x-0.5 active:translate-y-0.5" href="https://github.com/Nightfall5/pbp-240511056" target="_blank" rel="noopener noreferrer">
+        KODE SUMBER GITHUB
+      </a>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
