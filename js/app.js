@@ -191,3 +191,4 @@ document.addEventListener('DOMContentLoaded', () => {
     btnSsoGithub.addEventListener('click', () => handleSsoMockup('GitHub'));
   }
 });
+
